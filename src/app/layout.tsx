@@ -21,9 +21,6 @@ export default function RootLayout({
         <meta property="og:image" content="./OGP.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@lew_yumei" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta name="twitter:image" content="./OGP.png" />
       </head>
 
       <body className="bg-neutral-800">{children}</body>
