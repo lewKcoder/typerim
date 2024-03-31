@@ -11,8 +11,6 @@ export const KeySwitch: Component = (props) => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === label || event.key === label.toLowerCase()) {
         setIsPressed(true);
-
-        console.log("Key pressed:", label);
       }
     };
 

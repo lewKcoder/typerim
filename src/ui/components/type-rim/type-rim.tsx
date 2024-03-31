@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 export const TypeRim: FunctionComponent = () => {
   return (
-    <div className="py-20 grid justify-center">
+    <div className="p-10">
       <svg
         width="261"
         height="60"
