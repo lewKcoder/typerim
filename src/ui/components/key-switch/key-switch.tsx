@@ -1,14 +1,14 @@
 "use client";
 
 import useSound from "use-sound";
-import catSound from "@/assets/cat_1.mp3";
+import catSound from "@/assets/tapping.mp3";
 import { useEffect, useState, useRef } from "react";
 import { Component } from "./types";
 
 export const KeySwitch: Component = (props) => {
   const { label, isPressed: propIsPressed } = props;
   const [isPressed, setIsPressed] = useState(propIsPressed);
-  const [play] = useSound(catSound, { volume: 0.01 });
+  const [play] = useSound(catSound, { volume: 0.5 });
 
   const isPressedRef = useRef<HTMLButtonElement>(null);
 
