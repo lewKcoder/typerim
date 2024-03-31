@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 type Props = {
   label: string;
-  onClick: () => void;
+  isPressed: boolean;
 };
 
 export type Component = FunctionComponent<Props>;

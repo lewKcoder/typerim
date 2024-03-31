@@ -2,13 +2,7 @@
 
 import { KeySwitch } from "@/ui/components/key-switch";
 import { Component } from "./types";
-
-const keyBoardLabels = [
-  ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
-  ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
-  ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
-  ["Z", "X", "C", "V", "B", "N", "M"],
-];
+import { keyBoardLabels } from "./data";
 
 export const KeyBoard: Component = () => {
   return (
@@ -22,12 +16,8 @@ export const KeyBoard: Component = () => {
             (index === 0 || index === 3) && "translate-x-[-28px]"
           }`}
         >
-          {labels.map((label) => (
-            <KeySwitch
-              key={label}
-              label={label}
-              onClick={() => console.log("Do sound")}
-            />
+          {labels.map(({ label, isPressed }) => (
+            <KeySwitch key={label} label={label} isPressed={isPressed} />
           ))}
         </div>
       ))}
